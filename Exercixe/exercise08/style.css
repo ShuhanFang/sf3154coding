@@ -1,0 +1,76 @@
+body {
+    margin: 3em;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center; /* center the button */
+  }
+  
+  h1 {
+    line-height: 1.25;
+    margin: 2em 0 0;
+  }
+  
+  p {
+    margin: 0.5em 0;
+  }
+  
+  #switcher {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: inline-block; /* make the buttons appear on one line */
+  }
+  
+  #switcher li {
+    display: inline-block; /* make the buttons appear next to each other */
+    width: 30px;
+    height: 30px;
+    margin: 0 15px 15px 0;
+    border-radius: 30px;
+    border: 3px solid black;
+    cursor: pointer; /* make the cursor change to a hand when hovering over the buttons */
+  }
+  
+  /* button colors */
+  
+  #redButton {
+    background-color: rgb(255, 138, 138);
+  }
+  
+  #yellowButton {
+    background-color: rgb(255, 255, 136);
+  }
+  
+  #blueButton {
+    background-color: rgb(146, 177, 255);
+  }
+  
+  #whiteButton {
+    background-color: white;
+  }
+  
+  /* background colors */
+  
+  .red-theme {
+    background-color:rgb(255, 138, 138);
+    color: white; /* change text color to white for contrast */
+  }
+  
+  .yellow-theme {
+    background-color:rgb(255, 255, 136);
+    color: black;
+  }
+  
+  .blue-theme {
+    background-color: rgb(146, 177, 255);
+    color: white;
+  }
+  
+  .white-theme {
+    background-color: white;
+    color: black;
+  }
+  

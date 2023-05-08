@@ -1,0 +1,63 @@
+
+/* set a more modern background color */
+body {
+    background-color: #f9fafb;
+}
+
+/* make the main content area stand out more */
+div {
+    background-color: #fff;
+    margin: 100px auto;
+    padding: 40px;
+    border: 5px solid #FC35D1;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+/* use a more readable font */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* adjust the size of the main title */
+.title {
+    font-size: 60px;
+    font-family: 'Orbitron', sans-serif;
+}
+h5{
+    font-size: 24px;
+    font-family: 'Orbitron', sans-serif;
+}
+/* adjust the size of the subtitle */
+.subtitle {
+    font-size: 30px;
+}
+
+/* make the author information stand out */
+.lead {
+    color:#141414;
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+    }
+
+
+/* use a consistent margin for paragraphs */
+p {
+    margin: 20px 0;
+}
+
+/* highlight important words with a background color */
+.highlight {
+    background-color: #FFE082;
+}
+
+/* add some spacing between sections */
+section {
+    margin-bottom: 50px;
+}
+
+/* add a hover effect to links */
+a:hover {
+    text-decoration: underline;
+}
+

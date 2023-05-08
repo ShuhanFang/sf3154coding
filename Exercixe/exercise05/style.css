@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+html, body {
+height: 100%;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background: #e0f0fe;
+    min-height: 100vh;
+  }  
+
+main, body, footer {
+    padding: 20px;
+    color: #0c2e21;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+header, footer {
+    line-height: 60px;
+}
+
+main {
+    flex: 1;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+.column-wrapper {
+    display: flex;
+}
+  
+.left-column, .right-column {
+    width: 50%;
+    flex-direction: row;
+    display:flex;
+}
+
+h1 {
+    text-transform: capitalize;
+    font-size: 2.68em;
+}
+
+p {
+    line-height: 1.68em;
+    padding-bottom: 1em;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.column {
+    padding: 20px;
+    height: 100%;
+    width: 50%;
+}
+
+.pullquote {
+    color: #48944e;
+    font-family: "Libre Baskerville", serif;
+    font-style: italic;
+    font-size: 1.68em;
+    line-height: 1.4em;
+    padding: 15px 0;
+}
+
+  
+@media (max-width: 1024px) {
+    .flex-container {
+        background: #fffade;
+      }
+    
+    main, body, footer {
+        padding: 20px;
+        color: #034732;
+        }
+    
+    .pullquote {
+            color: #3939e6;
+            font-family: "Libre Baskerville", serif;
+            font-style: italic;
+            font-size: 1.68em;
+            line-height: 1.4em;
+            padding: 15px 0;
+        }
+
+      main {
+        display: flex;
+        flex-direction: column;
+      }
+    
+      .column-wrapper {
+        display: flex;
+        flex-direction: column;
+      }
+    
+      .left-column, .right-column {
+        width: 100%;
+        flex-direction: row;
+        display:flex;
+      }
+}
+
+
+@media (max-width: 768px) {
+    .flex-container {
+        background: #efffd1;
+    }
+
+    main, body, footer {
+        padding: 20px;
+        color: #450920;
+        }
+
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pullquote {
+        color: #fb6376;
+        font-family: "Libre Baskerville", serif;
+        font-style: italic;
+        font-size: 1.68em;
+        line-height: 1.4em;
+        padding: 15px 0;
+    }
+
+
+    .column-wrapper {
+        display: flex;
+        flex-direction: column;
+      }
+    
+      .left-column, .right-column {
+        width: 100%;
+        flex-direction: row;
+        display:flex;
+      }
+}
+
+@media (max-width: 600px) {
+    section {
+        background: #f2f4ee;
+    }
+  
+    main, body, footer {
+        padding: 20px;
+        color: #359054;
+        }
+
+    main {
+      display: flex;
+    }
+  
+    .pullquote {
+        color: #392f5a;
+        font-family: "Libre Baskerville", serif;
+        font-style: italic;
+        font-size: 1.68em;
+        line-height: 1.4em;
+        padding: 15px 0;
+    }
+
+
+    .column-wrapper {
+      flex-direction: column;
+    }
+  
+    .left-column, .right-column {
+      width: 100%;
+      flex-direction: column;
+      display:flex;
+    }
+  
+    .column {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .flex-container {
+        background: #bddcf9;
+    }
+
+    main, body, footer {
+        padding: 20px;
+        color: #450920;
+        }
+
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pullquote {
+        color: #fb6376;
+        font-family: "Libre Baskerville", serif;
+        font-style: italic;
+        font-size: 1.68em;
+        line-height: 1.4em;
+        padding: 15px 0;
+    }
+
+
+    .column-wrapper {
+        display: flex;
+        flex-direction: column;
+      }
+    
+      .left-column, .right-column {
+        width: 100%;
+        flex-direction: row;
+        display:flex;
+      }
+}
+
+@media (max-width: 320px) {
+    .flex-container {
+        background: #f9bdf3;
+    }
+
+    main, body, footer {
+        padding: 20px;
+        color: #450920;
+        }
+
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pullquote {
+        color: #fb6376;
+        font-family: "Libre Baskerville", serif;
+        font-style: italic;
+        font-size: 1.68em;
+        line-height: 1.4em;
+        padding: 15px 0;
+    }
+
+
+    .column-wrapper {
+        display: flex;
+        flex-direction: column;
+      }
+    
+      .left-column, .right-column {
+        width: 100%;
+        flex-direction: row;
+        display:flex;
+      }
+      .image img {
+    width: 200px;
+    height: 480px;
+    object-fit: cover;
+    object-position: 0% 100%;
+  }
+}

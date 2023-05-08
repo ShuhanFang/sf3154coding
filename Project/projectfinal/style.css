@@ -1,0 +1,358 @@
+/* Basic styling */
+* {
+    margin-left: 30px;
+    margin-right: 40px;
+    box-sizing: border-box;
+  }
+
+  body {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
+    padding-top: 100px;
+    font-family: 'Open Sans', sans-serif;
+    color: #323232;
+    background: rgb(254, 254, 254);
+    background-size:contain;
+    background-position:center;
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    padding: 0px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: flex-start;
+    z-index: 9999;
+  }
+  
+  h1 {
+    font-size: 32px;
+    font-weight: bold;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
+    font-family: 'ZCOOL QingKe HuangYou', sans-serif;
+  }  
+
+   /* Gallery styling */
+   .filters {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    padding-right: 40px;
+  }
+
+  
+
+  button {
+    flex:1;
+    border: 1px solid #4f4f4f; 
+    background-color: #fff;
+    color: #333;
+    padding: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    font-size: 14px;
+    font-family: 'ZCOOL XiaoWei', sans-serif;
+    font-weight: bold;
+    
+  }
+  button:hover, button.active {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  a.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #4f4f4f; 
+    background-color: #fff;
+    color: #333;
+    padding: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    font-size: 14px;
+    font-family: 'ZCOOL XiaoWei', sans-serif;
+    font-weight: bold;
+    text-decoration: none; /* 去掉下划线 */
+  }
+  
+  a.home:hover, a.home.active {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  main {
+    padding: 50px;
+  }
+  
+  section {
+    margin: 5px;
+  }
+  
+  h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-family: 'ZCOOL QingKe HuangYou', sans-serif;
+  }
+
+  h3 {
+    flex:1;
+    border: none;
+    background-color: #1f1f1f;
+    color: #ffffff;
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    font-size: 36px;
+    font-family: 'ZCOOL QingKe HuangYou', sans-serif;
+  }
+  h3:hover, h3.active {
+    background-color: #1f1f1f;
+    color: #ffffff;
+  }
+  
+  p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    font-family: 'ZCOOL QingKe HuangYou', sans-serif;
+  }
+  
+  h4 {
+    flex:1;
+    border: none;
+    background-color: #1f1f1f;
+    color: #ffffff;
+    padding: 0.5rem;
+    text-align: center;
+    margin: 0;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    font-size: 36px;
+    font-family: 'ZCOOL QingKe HuangYou', sans-serif;
+  }
+  h4:hover, h3.active {
+    background-color: #1f1f1f;
+    color: #ffffff;
+  }
+ 
+  .grid {
+    margin: 0;
+    height: auto;
+    display: grid;
+    justify-content:center;
+    grid-template-columns: repeat(4, 250px);
+    grid-template-rows: repeat(22, 380px);
+    gap: 30px;
+    border: 10px solid #1f1f1f;
+    padding: 1rem;
+    filter: brightness(100%) contrast(90%) saturate(120%);
+    position: relative;
+    z-index: 1;
+  }
+  
+  
+  .grid img:hover {
+    transform: scale(1.3);
+  }
+  
+  .item {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex-wrap:nowrap;
+    width: 250px;
+    margin: 0px;
+    border: 2px solid #ccc;
+    padding: 0px;
+    border-radius: 10px;
+    clear: both;
+  }
+  
+  .item img {
+    display: block;
+    width: 85%;
+    height: 200px;
+    margin: 12px;
+    box-sizing: content-box;
+    margin-bottom: 20px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-out;
+    filter: brightness(80%) contrast(120%) saturate(120%);
+    border: 1px solid #ffffff; 
+    padding: 5px; 
+  }
+  .caption {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    bottom: 22%;
+    left: -50px;
+    right: -50px;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 'ZCOOL XiaoWei', sans-serif;
+  }
+
+  .content {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 5px; 
+    margin-right: 0px;
+    border-top: 1px solid black;
+    width: calc(100% - 10px);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0;
+    line-height: 1.5;
+    font-size: 13px;
+    font-family: 'ZCOOL XiaoWei', sans-serif;
+    
+  }
+  
+  .content div {
+    margin-bottom: 0px;
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .content strong {
+    margin-right: 5px; 
+  }
+  
+  .content div:first-child {
+    margin-top: 0; 
+  }
+
+  .interpretations {
+    position:absolute;
+   
+    top:-100px;
+    left:-250px;
+    right:-200px;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    font-size: 14px;
+    padding: 10px;
+    display: none;
+  }
+
+  .image-container {
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 80px;
+    border: 5px solid #1b1b1b;
+    background-color: #000000;
+  }
+  
+  .image-container > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px; 
+    padding: 0;
+    justify-content: flex-start;
+    height: 250px; 
+    border: 1px solid #d4d4d4;
+    flex-grow: 1; 
+  }
+  
+  .image-container .name {
+    padding-top: 18px; 
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex-wrap: nowrap;
+    justify-content: center;
+    font-weight: bold;
+    color: #ffffff;
+    border-color: #d4d4d4;
+    flex-grow: 1; 
+  }
+  
+  .selected-image-container {
+    display: flex;
+    width: 100%;
+    margin: 0px;
+    padding: 10px;
+  }
+  
+  .image-container .intro {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align:center;
+    color: #ffffff;
+    flex-grow: 1; 
+  }
+  
+  .image-container .my-custom-image-class {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 1px solid #ffffff; 
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    height: 250px;
+    width: 380px;
+  }
+  
+  .image-container .my-custom-image-class img {
+    height: 80%;
+    width: 100%; 
+    object-fit: contain;
+    border: 1px solid #ffffff; 
+    padding: 5px; 
+  }
+  
+  @media screen and (max-width: 768px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
