@@ -6,31 +6,24 @@
   }
 
   body {
-    overflow-x: hidden;
     width: 100%;
-    max-width: 100vw;
-    box-sizing: border-box;
     padding-top: 100px;
     font-family: 'Open Sans', sans-serif;
     color: #323232;
-    background: rgb(254, 254, 254);
-    background-size:contain;
-    background-position:center;
   }
   
   header {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100px;
+    height: auto;
     background-color: #fff;
-    padding: 0px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     display: flex;
     align-items: flex-start;
     z-index: 9999;
   }
+  
   
   h1 {
     font-size: 32px;
@@ -43,20 +36,17 @@
    .filters {
     display: flex;
     justify-content: center;
-    font-size: 14px;
-    padding-right: 40px;
+    width: auto;
+  
   }
 
   
-
   button {
     flex:1;
     border: 1px solid #4f4f4f; 
     background-color: #fff;
     color: #333;
     padding: 8px;
-    padding-left: 10px;
-    padding-right: 10px;
     margin: 10px;
     margin-top: 20px;
     cursor: pointer;
@@ -157,12 +147,13 @@
   .grid {
     margin: 0;
     height: auto;
+    width: auto;
     display: grid;
     justify-content:center;
     grid-template-columns: repeat(4, 250px);
     grid-template-rows: repeat(22, 380px);
     gap: 30px;
-    border: 10px solid #1f1f1f;
+
     padding: 1rem;
     filter: brightness(100%) contrast(90%) saturate(120%);
     position: relative;
@@ -179,7 +170,7 @@
     flex-direction: column;
     position: relative;
     flex-wrap:nowrap;
-    width: 250px;
+    width: auto;
     margin: 0px;
     border: 2px solid #ccc;
     padding: 0px;
@@ -340,12 +331,7 @@
     padding: 5px; 
   }
   
-  @media screen and (max-width: 768px) {
-    .grid {
-      grid-template-columns: 1fr;
-    }
-  }
-  
+ 
   
   
   
