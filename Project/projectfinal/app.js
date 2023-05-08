@@ -64,7 +64,7 @@ imgContainer.appendChild(clonedImg);
       const introDiv = document.createElement('div');
       introDiv.classList.add('intro');
       introDiv.innerText = interpretations.innerText;
-      introDiv.style.height = '250px'; // 设置介绍文本高度与图片高度一致
+
       introDiv.style.overflow = 'hidden'; // 隐藏溢出部分
       captionContainer.appendChild(imgContainer);
       captionContainer.appendChild(introDiv);
